@@ -6,7 +6,7 @@
  * Copyright (c) 2013年 mob.com. All rights reserved.
  */
 
-package cn.sharesdk.onekeyshare.theme.skyblue;
+package cn.sharesdk.onekeyshare.theme.classic;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,17 +29,18 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.mob.tools.gui.AsyncImageView;
+import com.mob.tools.gui.BitmapProcessor;
+import com.mob.tools.gui.PullToRefreshListAdapter;
+import com.mob.tools.gui.PullToRefreshView;
+import com.mob.tools.utils.UIHandler;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.PlatformActionListener;
 import cn.sharesdk.framework.TitleLayout;
-import com.mob.tools.gui.AsyncImageView;
-import com.mob.tools.gui.BitmapProcessor;
-import com.mob.tools.gui.PullToRefreshListAdapter;
-import com.mob.tools.gui.PullToRefreshView;
-import com.mob.tools.utils.UIHandler;
 import cn.sharesdk.onekeyshare.FollowerListFakeActivity;
 
 import static com.mob.tools.utils.R.dipToPx;
@@ -51,7 +52,6 @@ public class FollowListPage extends FollowerListFakeActivity implements OnClickL
 	private TitleLayout llTitle;
 	private FollowAdapter adapter;
 	private int lastPosition = -1;
-
 
 	public void onCreate() {
 		LinearLayout llPage = new LinearLayout(getContext());

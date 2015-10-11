@@ -2,9 +2,11 @@ package cn.sharesdk.onekeyshare;
 
 import android.os.Handler.Callback;
 import android.os.Message;
+
+import com.mob.tools.utils.UIHandler;
+
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.Platform.ShareParams;
-import com.mob.tools.utils.UIHandler;
 
 /**
  * 此类在Onekeyshare中并无用途，只是在Socialization中考虑到耦合度，需要通过反射的方式操作Onekeyshare，

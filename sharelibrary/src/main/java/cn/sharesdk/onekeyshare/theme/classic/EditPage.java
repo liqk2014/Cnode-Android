@@ -8,16 +8,6 @@
 
 package cn.sharesdk.onekeyshare.theme.classic;
 
-import static com.mob.tools.utils.BitmapHelper.blur;
-import static com.mob.tools.utils.BitmapHelper.captureView;
-import static com.mob.tools.utils.R.dipToPx;
-import static com.mob.tools.utils.R.getBitmapRes;
-import static com.mob.tools.utils.R.getScreenWidth;
-import static com.mob.tools.utils.R.getStringRes;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
@@ -51,15 +41,26 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.mob.tools.utils.UIHandler;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import cn.sharesdk.framework.CustomPlatform;
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.ShareSDK;
 import cn.sharesdk.framework.TitleLayout;
-
-import com.mob.tools.utils.UIHandler;
 import cn.sharesdk.onekeyshare.EditPageFakeActivity;
 import cn.sharesdk.onekeyshare.PicViewer;
 import cn.sharesdk.onekeyshare.ShareCore;
+
+import static com.mob.tools.utils.BitmapHelper.blur;
+import static com.mob.tools.utils.BitmapHelper.captureView;
+import static com.mob.tools.utils.R.dipToPx;
+import static com.mob.tools.utils.R.getBitmapRes;
+import static com.mob.tools.utils.R.getScreenWidth;
+import static com.mob.tools.utils.R.getStringRes;
 
 /**
  * Photo-text Sharing will be handling in this page
